@@ -6,22 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Portfolio</title>
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
-    
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117523751-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-117523751-1');
-</script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117523751-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-117523751-1');
+    </script>
 
 </head>
 
@@ -60,8 +60,8 @@
     <div id="lead">
         <div id="lead-content">
             <h1>Deval Shah</h1>
-            <h2>Deep Learning Engineer</h2>
-            <a href="Docs/CV.pdf" class="btn-rounded-white">Download CV</a>
+            <h2>Software Engineer</h2>
+            <a href="Docs/Resume.pdf" class="btn-rounded-white">Download Resume</a>
         </div>
         <!-- End #lead-content -->
 
@@ -83,16 +83,21 @@
                     <h2 class="heading">About Me</h2>
                 </div>
                 <div class="col-md-8">
-                    <p> 
-                        Hello World. I am Deval Shah and I am in pursuit to understand and learn about the cognitive intelligence in computers.
-                        The idea of general intelligence in computers fascinates me. The visual perception domain of computers is where my current interest lies.
-                        In recent years, the visual cognizance of machines has become more powerful due to the massive influx of research in the field of deep learning/computer vision.
-                        I believe that as computers become more intelligent and powerful, there arises a great need to have an ethical code of conduct developed in those systems.
+                    <p>
+                        Hello World. I am Deval Shah and I am in pursuit to understand and learn about the cognitive
+                        intelligence in machines.
+                        The idea of general intelligence in computers fascinates me. The visual perception domain of
+                        computers is where my interest lies.
+                        In recent years, the visual cognizance of machines has become more powerful due to the massive
+                        influx of research in the field of deep learning/computer vision.
+                        I believe that as computers become more intelligent and powerful and there will arise a great need to
+                        have an ethical code of conduct developed in those systems.
                     </p>
                     <br \>
                     <p>
-                        Currently, I am working as a deep learning/computer vision engineer at Uncanny Vision (AI based surveillance startup)
-                        in Bangalore, India. 
+                        Currently, I am working as a Software Engineer/Researcher in Machine Learning at Uncanny Vision (AI based
+                        surveillance startup)
+                        in Bangalore, India.
                     </p>
                 </div>
             </div>
@@ -103,54 +108,71 @@
     <div id="experience" class="background-alt">
         <h2 class="heading">Experience</h2>
         <div id="experience-timeline">
-	    <div data-date="June 2018 - Present">
+            <div data-date="June 2018 - Present">
                 <h3>Uncanny Vision</h3>
-                <h4>Deep Learning/Computer Vision Engineer</h4>
+                <h4>Deep Learning/Computer Vision</h4>
                 <div data-date="June 2018 - September 2018"></div>
-                    <p>
-                        <br /><b>Automatic Traffic Congestion System (ATCS)</b>.
-                        <ul style="list-style-type:circle">
-                            <li>Developed a proprietary algorithm to improve the tracking of detected vehicles using base computer vision methods.</li>
-                            <li>Worked on streamlining the end to end pipeline for the project.</li>
-                            <li>Did kernel level optimisations on low cost embedded hardware to run the computer vision algorithm at real time fps.</li>
-                            <li>Improved the stability issues of the system like memory leaks, crash due to excessive file writes, maximising the CPU to GPU performance on the embedded device.</li>
-                        </ul>
-
-                        <br /><b>Optimisation of Neural Networks based algorithms</b>.
-                        <ul style="list-style-type:circle">
-             			    <li>Implemented an algorithm in pytorch for pruning proprietary object detection neural network.</li>
-                            <li>The pruning algorithm successfully reduced the number of trainable parameters of the model by 4x and the performance gains were almost 2x on the low cost embedded devices with negligible loss in accuracy.</li>
-                        </ul>
-
-                        <br /><b>Japanese Optical Character Recognition</b>.
-                        <ul style="list-style-type:circle">
-             			    <li>Collected the Japanese character (kanji and hiragana) data (120k) with 165 classes by scraping the internet.</li>
-                            <li>Developed a pre processing algorithm which increased the accuracy of training by a significant margin.</li>
-                            <li>The custom architecture developed to train using the data and pre-processing algorithm outperformed the latest state of the art in Japanese OCR.</li>
-                        </ul>
-
-                        <br /><b> Automatic Number Plate Recognition(ANPR)</b>.
-                        <ul style="list-style-type:circle">
-             			    <li>Working on core algorithm optimisations for ANPR on low compute devices</li>
-                        </ul>
-                    </p>
-                </div>
+                <p>
+                    <br /><b>Automatic Traffic Congestion System (ATCS)</b>.
+                    <ul style="list-style-type:circle">
+                        <li>Developed a proprietary algorithm to improve the tracking of detected vehicles using base
+                            computer vision methods.</li>
+                        <li>Worked on streamlining the end to end pipeline for the project.</li>
+                        <li>Improved the stability issues of the system like memory leaks, crash due to excessive file
+                            writes, maximizing the CPU to GPU performance on the embedded device.</li>
+                    </ul>
+                    <br /><b>Optimization of Neural Networks</b>.
+                    <ul style="list-style-type:circle">
+                        <li>Implemented a neural network pruning algorithm in PyTorch which led to 35%(reduction in
+                            training parameters) with 0.6% accuracy loss and 3x performance gains on Nvidia Tegra TK1
+                            device</li>
+                    </ul>
+                    <br /><b>Optical Character Recognition(OCR)</b>.
+                    <ul style="list-style-type:circle">
+                        <li>Collected the Japanese character (kanji and hiragana) data (120k) with 165 classes by
+                            scraping the internet.</li>
+                        <li>Developed a pre processing algorithm which increased the accuracy of training by a
+                            significant margin.</li>
+                        <li>The custom architecture developed to train using the data and pre-processing algorithm
+                            outperformed the latest state of the art in Japanese OCR.</li>
+                    </ul>
+                    <br /><b>Dense Object Detection</b>.
+                    <ul style="list-style-type:circle">
+                        <li>Worked on dense object detection problem to mitigate the false positive issue in two-stage detectors using Gaussian priors.</li>
+                        <li>Developed methods to improve overall mechanism of training for binary classification in two stage detectors.</li>
+                    </ul>
+                    <br /><b> Automatic Number Plate Recognition(ANPR)</b>.
+                    <ul style="list-style-type:circle">
+                        <li>Worked on core algorithm optimizations for ANPR on low compute devices</li>
+                        <li>Redesigned the post-processing algorithm for ANPR(Automatic Number Plate Recognition) system to efficiently queue unique vehicles in unconstrained environments with more than 97% accuracy.</li>
+                        <li>Currently, working on vehicle re-identification across different ANPR edge devices for user
+                            verification.</li>
+                    </ul>
+                </p>
+            </div>
 
             <div data-date="January 2018 – May 2018">
                 <h3>Uncanny Vision</h3>
                 <h4>Research Intern</h4>
-                <p> 
-		            Developed azure based pedestrian detection tool for a client in initial phase of internship.
+                <p>
+                    Developed azure based pedestrian detection tool for a client in initial phase of internship.
                     <br />
                     <br /><b>Automatic Number Plate Recognition(ANPR) team</b>.
-                        <ul style="list-style-type:circle">
-                                <li>Performed bug fixes for stability issues while running multiple instances of anpr system from same machine.</li>
-                                <li>Designed and implemented linear motion tracking model in anpr system and managed to handle junk license plates issue.</li>
-                                <li>Modified the architecture and managed to improve the accuracy by 9%</li>
-                                <li>Developed a report generation tool for generating reports of any time duration</li>   
-                                <li>Curated different testing and validation sets for anpr system to verify it</li>
-                    		<li>Wrote automation scripts in shell and python to enhance productivity of the data annotation team.</li>
-			  </ul>
+                    <ul style="list-style-type:circle">
+                        <li>Wrote automation scripts in shell and python to enhance productivity of the data annotation
+                            team.</li>
+                        <li>Built a sophisticated web scraper in python using selenium web driver to scrape more than
+                            0.2 million unique Indian car images.</li>
+                        <li>Created an automated test service on Azure for inference on stream data using object
+                            detection models and report mean average precision(mAP).</li>
+                        <li>Programmed a fast linear motion tracking model in C++ to tackle repeat license plate issues
+                            in a single lane.</li>
+                        <li>Optimized deep learning models using acceleration frameworks like OpenVino(Intel) and
+                            TensorRT(Nvidia).</li>
+                        <li>Modified the architecture using LSTM's and improved the accuracy by 9%</li>
+                        <li>Performed bug fixes for stability issues while running multiple instances of anpr system
+                            from same machine.</li>
+                    </ul>
                 </p>
             </div>
 
@@ -166,8 +188,8 @@
                 <h3>Towards Data Science</h3>
                 <h4>Data Science Writer</h4>
                 <p>
-                   Wrote blogs on the topics related to Data Science domain. For eg : Activation Functions, Data Mining tools, 
-                   Face Recognition using eigen-faces etc. on the medium platform 
+                    Wrote blogs on the topics related to Data Science domain. For eg : Activation Functions, Data Mining
+                    tools, etc. for <i>TowardsDataScience</i> publication.
                 </p>
                 <br />
                 <a href="https://medium.com/@devalshah1619" target="_blank">Medium Profile</a>
@@ -180,11 +202,11 @@
         <h2 class="heading">Education</h2>
         <div class="education-block">
             <h3>Ahmedabad University</h3>
-            <span class="education-date">Aug 2014 - May 2018</span>
+            <span class="education-date">Fall 2014 - May 2018</span>
             <h4>Bachelor of Technology in Information and Communication Technology</h4>
-         <ul>
-            <li><b>CGPA</b> : 3.25/4.33</li>
-        </ul>
+            <ul>
+                <li><b>GPA</b> : 3.25</li>
+            </ul>
         </div>
         <!-- End .education-block -->
 
@@ -192,9 +214,9 @@
             <h3>Asia English School</h3>
             <span class="education-date">June 2012 - March 2014</span>
             <h4>Higher Secondary Education</h4>
-        <ul>
+            <ul>
                 <li><b>GPA</b> : 92.15 %</li>
-        </ul>
+            </ul>
         </div>
         <!-- End .education-block -->
     </div>
@@ -206,14 +228,16 @@
             <div class="row">
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/anpr.jpg" height="300px" width="300px"/>
+                        <img src="images/anpr.jpg" height="300px" width="300px" />
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
                         <h3>Automatic Number Plate Recognition(ANPR)</h3>
                         <p>
-                            As an intern at Uncanny Vision, I worked on the development of ANPR system. It is primarily used for recognition of text on license plates. 
-                            It has applications ranging from law enforcements, automated toll gates, gated community records etc.
+                            As an intern at Uncanny Vision, I worked on the development of ANPR system. It is primarily
+                            used for recognition of text on license plates.
+                            It has applications ranging from law enforcements, automated toll gates, gated community
+                            records etc.
                         </p>
                         <p><b>**Can't share project link. It's confidential </b></p>
                     </div>
@@ -223,91 +247,81 @@
 
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/person_detection_1.jpg" height="300px" width="300px"/>
+                        <img src="images/person_detection_1.jpg" height="300px" width="300px" />
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
                         <h3>Pedestrian Detection On Video</h3>
                         <p>
-                            Pedestrian detection is an essential and significant task in any intelligent video surveillance system, 
-                            as it provides the fundamental information for semantic understanding of the video footages. It was developed  
-                            using deep learning cnn based methods. 
+                            Pedestrian detection is an essential and significant task in any intelligent video
+                            surveillance system. It was developed
+                            using deep learning cnn based methods.
                         </p>
                         <a href="https://github.com/dvlshah/Person_Detection_Using_Yolov2">View Project</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
                 <div class="project shadow-large">
-                        <div class="project-image">
-                            <img src="images/vqa.jpg" height="300px" width="300px"/>
-                        </div>
-                        <!-- End .project-image -->
-                        <div class="project-info">
-                            <h3>Visual Question Answering</h3>
-                            <p>
-                                VQA system was built using CNN + RNN custom architecture. 
-                            </p>
-                            <a href="https://github.com/dvlshah/Visual_Question_Answering">View Project</a>
-                        </div>
-                        <!-- End .project-info -->
+                    <div class="project-image">
+                        <img src="images/face_recognition.jpg" height="300px" width="300px" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Face Recognition</h3>
+                        <p>
+                            Face Recognition system is developed using Eigen Faces algorithm. It is
+                            written in Matlab.It uses feature extraction and template matching based on
+                            Linear Algebra techniques.
+                        </p>
+                        <a href="https://github.com/dvlshah/Face_Recognition_Using_Eigen_Faces">View Project</a>
+                        <br />
+                        <a
+                            href="https://medium.com/@devalshah1619/face-recognition-using-eigenfaces-technique-f221d505d4f7">Medium
+                            Article</a>
+                    </div>
+                    <!-- End .project-info -->
                 </div>
                 <div class="project shadow-large">
-                        <div class="project-image">
-                            <img src="images/face_recognition.jpg" height="300px" width="300px"/>
-                        </div>
-                        <!-- End .project-image -->
-                        <div class="project-info">
-                            <h3>Face Recognition</h3>
-                            <p>
-                                Face Recognition system is developed using Eigen Faces algorithm. It is 
-                                written in Matlab.It uses feature extraction and template matching based on
-                                Linear Algebra techniques.
-                            </p>
-                            <a href="https://github.com/dvlshah/Face_Recognition_Using_Eigen_Faces">View Project</a>
-                            <br />
-                            <a href="https://medium.com/@devalshah1619/face-recognition-using-eigenfaces-technique-f221d505d4f7">Medium Article</a>
-                        </div>
-                        <!-- End .project-info -->
+                    <div class="project-image">
+                        <img src="images/q.jpg" height="300px" width="300px" />
                     </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Gesture Controlled Robot</h3>
+                        <p>
+                            The robot built is controlled by hand gestures. It was programmed on AtMega32 chip in C.
+                            It has various applications in military, warehouse management, evacuation etc.
+                        </p>
+                        <a href="https://github.com/dvlshah/Gesture-Controlled-Robot">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
                 <div class="project shadow-large">
-                        <div class="project-image">
-                            <img src="images/q.jpg" height="300px" width="300px"/>
-                        </div>
-                        <!-- End .project-image -->
-                        <div class="project-info">
-                            <h3>Gesture Controlled Robot</h3>
-                            <p>
-                                The robot built is controlled by hand gestures. It was programmed on AtMega32 chip in C.
-                                It has various applications in military, warehouse management, evacuation etc.
-                            </p>
-                            <a href="https://github.com/dvlshah/Gesture-Controlled-Robot">View Project</a>
-                        </div>
-                        <!-- End .project-info -->
+                    <div class="project-image">
+                        <img src="images/Movie_Tracker.jpeg" height="300px" width="300px" />
                     </div>
-                <div class="project shadow-large">
-                        <div class="project-image">
-                            <img src="images/Movie_Tracker.jpeg" height="300px" width="300px"/>
-                        </div>
-                        <!-- End .project-image -->
-                        <div class="project-info">
-                            <h3>Movie Tracker</h3>
-                            <p>
-                            A web application built for tracking movie information. It was written using Django REST API framework in Python.  
-                            </p>
-                            <a href="https://github.com/dvlshah/Movie-Tracker">View Project</a>
-                        </div>
-                        <!-- End .project-info -->
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Movie Tracker</h3>
+                        <p>
+                            A web application built for tracking movie information. It was written using Django REST API
+                            framework in Python.
+                        </p>
+                        <a href="https://github.com/dvlshah/Movie-Tracker">View Project</a>
                     </div>
+                    <!-- End .project-info -->
+                </div>
                 <!-- End .project -->
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/Text_Encrytion.jpeg" height="300px" width="300px"/>
+                        <img src="images/Text_Encrytion.jpeg" height="300px" width="300px" />
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
                         <h3>Text Encryption Tool</h3>
                         <p>
-                            Text encryption tool was built for encrypting text files using AES algorithm in Java along with GUI using JavaFX. 
+                            Text encryption tool was built for encrypting text files using AES algorithm in Java along
+                            with GUI using JavaFX.
                         </p>
                         <a href="https://github.com/dvlshah/Text_Encryption_Tool">View Project</a>
                     </div>
@@ -315,13 +329,14 @@
                 </div>
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/phone_directory.png" height="300px" width="300px"/>
+                        <img src="images/phone_directory.png" height="300px" width="300px" />
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
                         <h3>Phone Directory</h3>
                         <p>
-                            Developed a phone based directory application in Java. The core features of CRUD(Create,Update,Delete) were built
+                            Developed a phone based directory application in Java. The core features of
+                            CRUD(Create,Update,Delete) were built
                             using efficient data structures.
                         </p>
                         <a href="#">View Project</a>
@@ -334,23 +349,27 @@
     <!-- End #projects -->
 
     <div id="skills">
-            <h2 class="heading">Software</h2>
-            <ul>
-                <li>Python</li>
-                <li>Java</li>
-                <li>C</li>
-                <li>C++</li>
-                <li>Shell</li>
-                <li>Matlab</li>
-            </ul>
-            <br />
-        <h2 class="heading">Frameworks</h2>    
-        <ul>            
-            <li>Django</li>
-            <li>Torch</li>
+        <h2 class="heading">Software</h2>
+        <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>C++</li>
+            <li>C</li>
+            <li>Unix</li>
+            <li>Matlab</li>
+        </ul>
+        <br />
+        <h2 class="heading">Frameworks</h2>
+        <ul>
+            <li>PyTorch</li>
             <li>Tensorflow</li>
-            <li>Caffe</li>
-            <li>Azure</li>
+            <li>Keras</li>
+        </ul>
+        <br />
+        <h2 class="heading">Technology</h2>
+        <ul>
+            <li>Docker</li>
+            <li>Django</li>
         </ul>
         <br />
         <h2 class="heading">OS</h2>
@@ -381,7 +400,7 @@
             <div class="row">
                 <div class="col-sm-5 copyright">
                     <p>
-                        Copyright &copy; 2017 Deval Shah
+                        Copyright &copy; 2020 Deval Shah
                     </p>
                 </div>
                 <div class="col-sm-2 top">
@@ -392,13 +411,16 @@
                 <div class="col-sm-5 social">
                     <ul>
                         <li>
-                            <a href="https://github.com/dvlshah" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            <a href="https://github.com/dvlshah" target="_blank"><i class="fa fa-github"
+                                    aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href="https://linkedin.com/in/dvlshah" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            <a href="https://linkedin.com/in/dvlshah" target="_blank"><i class="fa fa-linkedin"
+                                    aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href="https://medium.com/@devalshah1619" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>
+                            <a href="https://medium.com/@devalshah1619" target="_blank"><i class="fa fa-medium"
+                                    aria-hidden="true"></i></a>
                         </li>
                     </ul>
                 </div>
